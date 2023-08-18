@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aw-watcher-zoom"
+version = "0.3.0"
+description = "Zoom watcher for ActivityWatch"
+authors = ["Vinay G Y <vinay@zkteco.in>"]
+license = ""
+repository = ""
+
+[tool.poetry.scripts]
+aw-watcher-zoom = "aw_watcher_zoom:main"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+spotipy = "^2.12.0"
+aw-client = "^0.5.7"
+pypiwin32 = {version = "223", platform = "win32"}
+
+[tool.poetry.dev-dependencies]
+black = "*"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
