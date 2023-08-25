@@ -118,7 +118,7 @@ def heartbeat_loop(client, bucket_id, poll_time, strategy, exclude_title=False):
 
             current_window_event = Event(timestamp=now, data=current_window)
 
-            # Set pulsetime to 1 second more than the poll_time
+            # Set pulsetime to 3 second more than the poll_time
             # This since the loop takes more time than poll_time
             # due to sleep(poll_time).
             if current_window["app"] == "Zoom.exe":
