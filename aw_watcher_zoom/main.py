@@ -50,7 +50,7 @@ def main():
                 config_dir
             )
         )
-        sys.exit(1)
+        # sys.exit(1)
 
     # TODO: Fix --testing flag and set testing as appropriate
     client = ActivityWatchClient("aw-watcher-zoom", testing=False)
