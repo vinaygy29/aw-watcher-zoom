@@ -5,7 +5,7 @@ block_cipher = None
 a = Analysis(
     ["aw_watcher_zoom/__main__.py"],
     pathex=[],
-    binaries=[("aw_watcher_zoom")] if platform.system() == "Darwin" else [],
+    binaries=None,
     datas=None,
     hiddenimports=[],
     hookspath=[],
